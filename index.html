@@ -71,7 +71,7 @@
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {"@type": "Place", "name": "Van der Valk Hotel Oostzaan", "address": {"@type": "PostalAddress", "streetAddress": "Westeinde 1", "postalCode": "1511 MA", "addressLocality": "Oostzaan", "addressCountry": "NL"}},
       "organizer": [{"@id": "https://www.dfobv.nl/#organization"}, {"@id": "https://informatieronde.dfobv.nl/#nvhp"}],
-      "performer": [{"@type": "Person", "name": "Mark de Bruijn", "jobTitle": "Voorzitter NVHP", "image": "https://informatieronde.dfobv.nl/mark-de-bruijn.jpg"}, {"@type": "Person", "name": "Rob Timmermans"}, {"@type": "Person", "name": "Dennes Roes"}],
+      "performer": [{"@type": "Person", "name": "Mark de Bruijn", "jobTitle": "Voorzitter NVHP", "image": "https://informatieronde.dfobv.nl/mark-de-bruijn.jpg"}, {"@type": "Person", "name": "Rob Timmermans"}, {"@type": "Person", "name": "Dennes Roes", "image": "https://informatieronde.dfobv.nl/dennes-roes.jpg"}],
       "audience": {"@type": "BusinessAudience", "audienceType": "Hypotheekadviseurs en advieskantoren"},
       "offers": {"@type": "Offer", "url": "https://cdn.flxml.eu/f-5dce2db868e393c3", "price": "24.50", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validFrom": "2026-11-10T00:00:00+01:00", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "24.50", "priceCurrency": "EUR", "valueAddedTaxIncluded": false}}
     },
@@ -87,7 +87,7 @@
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {"@type": "Place", "name": "Van der Valk Hotel Ridderkerk", "address": {"@type": "PostalAddress", "streetAddress": "Krommeweg 1", "postalCode": "2988 CB", "addressLocality": "Ridderkerk", "addressCountry": "NL"}},
       "organizer": [{"@id": "https://www.dfobv.nl/#organization"}, {"@id": "https://informatieronde.dfobv.nl/#nvhp"}],
-      "performer": [{"@type": "Person", "name": "Mark de Bruijn", "jobTitle": "Voorzitter NVHP", "image": "https://informatieronde.dfobv.nl/mark-de-bruijn.jpg"}, {"@type": "Person", "name": "Rob Timmermans"}, {"@type": "Person", "name": "Dennes Roes"}],
+      "performer": [{"@type": "Person", "name": "Mark de Bruijn", "jobTitle": "Voorzitter NVHP", "image": "https://informatieronde.dfobv.nl/mark-de-bruijn.jpg"}, {"@type": "Person", "name": "Rob Timmermans"}, {"@type": "Person", "name": "Dennes Roes", "image": "https://informatieronde.dfobv.nl/dennes-roes.jpg"}],
       "audience": {"@type": "BusinessAudience", "audienceType": "Hypotheekadviseurs en advieskantoren"},
       "offers": {"@type": "Offer", "url": "https://cdn.flxml.eu/f-5dce2db868e393c3", "price": "24.50", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validFrom": "2026-11-10T00:00:00+01:00", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "24.50", "priceCurrency": "EUR", "valueAddedTaxIncluded": false}}
     },
@@ -103,7 +103,7 @@
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {"@type": "Place", "name": "Van der Valk Hotel Houten", "address": {"@type": "PostalAddress", "streetAddress": "Hoofdveste 25", "postalCode": "3992 DH", "addressLocality": "Houten", "addressCountry": "NL"}},
       "organizer": [{"@id": "https://www.dfobv.nl/#organization"}, {"@id": "https://informatieronde.dfobv.nl/#nvhp"}],
-      "performer": [{"@type": "Person", "name": "Mark de Bruijn", "jobTitle": "Voorzitter NVHP", "image": "https://informatieronde.dfobv.nl/mark-de-bruijn.jpg"}, {"@type": "Person", "name": "Rob Timmermans"}, {"@type": "Person", "name": "Dennes Roes"}],
+      "performer": [{"@type": "Person", "name": "Mark de Bruijn", "jobTitle": "Voorzitter NVHP", "image": "https://informatieronde.dfobv.nl/mark-de-bruijn.jpg"}, {"@type": "Person", "name": "Rob Timmermans"}, {"@type": "Person", "name": "Dennes Roes", "image": "https://informatieronde.dfobv.nl/dennes-roes.jpg"}],
       "audience": {"@type": "BusinessAudience", "audienceType": "Hypotheekadviseurs en advieskantoren"},
       "offers": {"@type": "Offer", "url": "https://cdn.flxml.eu/f-5dce2db868e393c3", "price": "24.50", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validFrom": "2026-11-10T00:00:00+01:00", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "24.50", "priceCurrency": "EUR", "valueAddedTaxIncluded": false}}
     },
@@ -246,6 +246,8 @@
   .pcard p { color: var(--muted); margin: 0 0 20px; }
   .speaker { display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding-top: 16px; }
   .avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, var(--blue), var(--navy)); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: .9rem; flex: none; }
+  .avatar.photo { width: 56px; height: 56px; background: none; overflow: hidden; box-shadow: 0 2px 8px rgba(11,42,74,.18); }
+  .avatar.photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
   .speaker b { display: block; font-size: .97rem; }
   .speaker small { color: var(--muted); }
   .host { margin: 36px auto 0; max-width: 760px; display: flex; align-items: center; gap: 28px; background: var(--soft); border-radius: 20px; padding: 24px 28px; }
@@ -465,7 +467,7 @@
           <span class="num">03 · Bedrijfsvoering</span>
           <h3>Hoe bereid je jouw advieskantoor voor op de toekomst?</h3>
           <p>Hoe pas je je bedrijfsvoering aan om goed in te spelen op deze en komende veranderingen?</p>
-          <div class="speaker"><div class="avatar">DR</div><div><b>Dennes Roes</b><small>Commissie masterclasses NVHP</small></div></div>
+          <div class="speaker"><div class="avatar photo"><img src="dennes-roes.jpg" alt="Dennes Roes" width="240" height="240" loading="lazy"></div><div><b>Dennes Roes</b><small>Commissie masterclasses NVHP</small></div></div>
         </article>
       </div>
       <div class="host">
