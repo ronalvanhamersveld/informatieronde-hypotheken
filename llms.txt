@@ -24,6 +24,6 @@
 
 ## Links
 
-- [Landingspagina](https://ronalvanhamersveld.github.io/informatieronde-hypotheken/)
+- [Landingspagina](https://informatieronde.dfobv.nl/)
 - [Productpagina op dfobv.nl](https://www.dfobv.nl/product/belangrijke-landelijk-informatieronde-over-wijzigingen-acceptatie-voorwaarden-hypotheken/)
 - [Bureau DFO](https://www.dfobv.nl)
