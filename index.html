@@ -6,7 +6,8 @@
 <title>Informatieavond acceptatievoorwaarden hypotheken 2026 | Bureau DFO</title>
 <meta name="description" content="Informatieavond voor hypotheekadviseurs over de nieuwe acceptatievoorwaarden. 24–26 november 2026 in Oostzaan, Ridderkerk en Houten. € 24,50 excl. btw.">
 <link rel="canonical" href="https://ronalvanhamersveld.github.io/informatieronde-hypotheken/">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<!-- TIJDELIJK: noindex tot de definitieve URL er is. Daarna terugzetten naar: index, follow, max-image-preview:large, max-snippet:-1 -->
+<meta name="robots" content="noindex, nofollow">
 <meta name="author" content="Bureau DFO">
 <meta name="google-site-verification" content="dXWd_85HsCBlTPOI_7K-EHkWXRdHdxd6usCRc0Jk1tg">
 <meta name="theme-color" content="#005fa9">
@@ -171,8 +172,13 @@
   }
   header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 108px; gap: 16px; }
   header.top img { height: 84px; width: auto; }
+  header.top .brands { display: flex; align-items: center; gap: 20px; }
+  header.top .brands a { display: block; }
+  header.top img.nvhp { height: 58px; }
+  header.top .brand-sep { width: 1px; height: 52px; background: var(--line); }
   header.top nav { display: flex; align-items: center; gap: 24px; }
-  header.top nav a.link { color: var(--ink); text-decoration: none; font-weight: 500; font-size: .95rem; }
+  header.top nav a.link { color: var(--ink); text-decoration: none; font-weight: 500; font-size: .95rem; white-space: nowrap; }
+  @media (max-width: 1080px) { header.top nav a.link { display: none; } }
   header.top nav a.link:hover { color: var(--blue); }
   header.top .btn { padding: 10px 20px; font-size: .95rem; }
 
@@ -214,8 +220,6 @@
   .partners .wrap { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 14px 40px; padding-top: 26px; padding-bottom: 26px; }
   .partners .label { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
   .partners .name { font-weight: 800; color: #8a97a8; font-size: 1.1rem; letter-spacing: .01em; }
-  .partners .partner-logo { height: 56px; width: auto; }
-
   /* Sections */
   section { padding: 84px 0; }
   .section-head { max-width: 720px; margin: 0 auto 48px; text-align: center; }
@@ -321,6 +325,9 @@
     section { padding: 60px 0; }
     header.top .wrap { height: 84px; }
     header.top img { height: 60px; }
+    header.top img.nvhp { height: 42px; }
+    header.top .brands { gap: 14px; }
+    header.top .brand-sep { height: 40px; }
     header.top .btn { display: none; }
     .hero .ctas .btn { flex: 1 1 100%; }
     .mobile-cta {
@@ -337,9 +344,15 @@
 
 <header class="top">
   <div class="wrap">
-    <a href="https://www.dfobv.nl" aria-label="Bureau DFO – naar de homepage">
-      <img src="https://www.dfobv.nl/wp-content/uploads/2017/08/cropped-Logo-DFO-liggend.png" alt="Bureau DFO logo">
-    </a>
+    <div class="brands">
+      <a href="https://www.dfobv.nl" aria-label="Bureau DFO – naar de homepage">
+        <img src="https://www.dfobv.nl/wp-content/uploads/2017/08/cropped-Logo-DFO-liggend.png" alt="Bureau DFO logo">
+      </a>
+      <span class="brand-sep" aria-hidden="true"></span>
+      <a href="https://www.hypothecairplanner.nl" target="_blank" rel="noopener" aria-label="NVHP – Nederlandse Vereniging van Hypothecair Planners">
+        <img class="nvhp" src="nvhp-logo.png" alt="NVHP logo" width="480" height="214">
+      </a>
+    </div>
     <nav>
       <a class="link" href="#programma">Programma</a>
       <a class="link" href="#data">Data &amp; locaties</a>
@@ -386,7 +399,7 @@
   <div class="partners">
     <div class="wrap">
       <span class="label">In samenwerking met</span>
-      <img class="partner-logo" src="nvhp-logo.png" alt="NVHP – Nederlandse Vereniging van Hypothecair Planners" width="480" height="214" loading="lazy">
+      <span class="name">NVHP</span>
       <span class="name">ASN</span>
       <span class="name">ING</span>
       <span class="name">Rabobank</span>
